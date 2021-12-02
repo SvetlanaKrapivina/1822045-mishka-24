@@ -73,7 +73,7 @@
                     <span class="control-label">Детская игрушка</span>
                   </label>
                 </li>
-
+              </ul>
             </fieldset>
             <fieldset class="catalog-filters__group">
               <legend class="catalog-filters__title">Цвет</legend>
@@ -128,6 +128,7 @@
 
       <!-- Инфо о клиенте-->
       <section class="client-info">
+        <h2 class="vissually-hidden">Информация о клиенте</h2>
         <div class="client-info__wrapper">
           <form class="client-info__form" action="https://echo.htmlacademy.ru/" method="post">
             <fieldset class="client-info__group">
@@ -149,28 +150,33 @@
                   </label>
                 </li>
               </ul>
+              <fieldset class="client-info__group">
                 <legend class="client-info__title">ТЕЛ</legend>
                 <div class="client-info__item">
                   <label class="client-info__field field">
                     <input class="field-input" placeholder="+7 ХХХ ХХХ ХХ ХХ*" type="number" name="phone">
                   </label>
-                </div>
+                  </div>
+              </fieldset>
+              <fieldset class="client-info__group">
                 <legend class="client-info__title">E-MAIL</legend>
                 <div class="client-info__item">
                   <label class="client-info__field field">
                     <input class="field-input" placeholder="Ваш Email*" type="email" name="email">
                   </label>
                 </div>
+              </fieldset>
+              <fieldset class="client-info__group">
                 <legend class="client-info__title">ДОП</legend>
                 <div class="client-info__item">
                   <label class="client-info__field">
                     <input class="field-input" placeholder="Опишите все ваши пожелания к заказу" type="text" name="dop-info">
                   </label>
                 </div>
+              </fieldset>
                 <p class="client-info__legend">
                   <small>*Поля обязательны для заполнения</small>
                 </p>
-                </div>
             </fieldset>
             <button class="send-button button" type="button">ОТПРАВИТЬ ЗАКАЗ</button>
           </form>
