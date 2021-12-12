@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html class="inner-page" lang="ru">
+<html class="page-inner" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body class="inner-page__body">
+  <body class="page-inner__body">
 
     <!-- Хедер и навигация -->
-    <header class="inner-page-header page-header">
-      <a class="logo page-header__logo" href="#">
-        <img class="page-header__logo-image" src="../source/img/mishka-logo-mobile.svg" width="86" height="35" alt="Магазин Мишка">
+    <header class="page-header page-inner-header">
+      <a class="logo page-header__logo" href="index.html">
+        <img class="page-header__logo-image" src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Магазин Мишка">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
@@ -19,22 +20,22 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a href="#">Каталог товаров</a>
+              <a class="site-list__link" href="catalog.html">Каталог товаров</a>
             </li>
             <li class="site-list__item">
-              <a href="#">Вязание на заказ</a>
+              <a  class="site-list__link" href="#">Вязание на заказ</a>
             </li>
           </ul>
 
-          <ul class="main-nav user-list">
+          <ul class="main-nav__list user-list">
             <li class="user-list__item">
-              <a href="#">
+              <a class="user-list__link" href="#">
                 <svg class="user-list__search-icon" width="18" height="18"></svg>
                 Поиск по сайту
               </a>
             </li>
             <li class="user-list__item">
-              <a href="#">
+              <a class="user-list__link" href="#">
                 <svg class="user-list__cart-icon" width="21" height="18"></svg>
                 Корзина:
               </a>
@@ -44,9 +45,9 @@
       </nav>
     </header>
 
-    <main class="inner-page-main page-main">
-      <h1 class="inner-page-main__title">Вязание на заказ</h1>
-      <p class="inner-page-main__description">
+    <main class="page-inner-main page-main">
+      <h1 class="page-inner-main__title">Вязание на заказ</h1>
+      <p class="page-inner-main__description">
         Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
       </p>
 
@@ -57,7 +58,7 @@
           <form class="catalog-filters__form" action="https://echo.htmlacademy.ru/" method="get">
 
             <fieldset class="catalog-filters__group">
-              <legend class="catalog-filters__title">Тип</legend>
+              <legend class="catalog-filters__title">ТИП</legend>
               <ul class="catalog-filters__list">
                 <li class="catalog-filters__item">
                   <label class="control">
@@ -66,6 +67,7 @@
                     <span class="control-label">Аксессуар для интерьера</span>
                   </label>
                 </li>
+
                 <li class="catalog-filters__item">
                   <label class="control">
                     <input class="visually-hidden control-input" type="radio" name="product-type" value="childrens-toy">
@@ -75,8 +77,9 @@
                 </li>
               </ul>
             </fieldset>
+
             <fieldset class="catalog-filters__group">
-              <legend class="catalog-filters__title">Цвет</legend>
+              <legend class="catalog-filters__title">ЦВЕТ</legend>
               <ul class="catalog-filters__list">
                 <li class="catalog-filters__item">
                   <label class="control">
@@ -96,7 +99,7 @@
                   <label class="control">
                     <input class="visually-hidden control-input" type="checkbox" name="tiffany">
                     <span class="control-mark"></span>
-                    <span class="control-label">«Тиффани»</span>
+                    <span class="control-label">Тиффани</span>
                   </label>
                 </li>
                 <li class="catalog-filters__item">
@@ -131,54 +134,54 @@
         <h2 class="vissually-hidden">Информация о клиенте</h2>
         <div class="client-info__wrapper">
           <form class="client-info__form" action="https://echo.htmlacademy.ru/" method="post">
-            <fieldset class="client-info__group">
+            <fieldset class="client-info__group ">
               <legend class="client-info__title">ФИО</legend>
               <ul class="client-info__list">
                 <li class="client-info__item">
-                  <label class="client-info__field field">
-                    Имя:<input class="field-input" placeholder="Введите ваше имя*" type="text" name="Name">
+                  <label class="client-info__label field">
+                    Имя:<input class="field__input-label" placeholder="Введите ваше имя*" type="text" name="Name">
                   </label>
                 </li>
                 <li class="client-info__item">
-                  <label class="client-info__field field">
-                    Фамилия:<input class="field-input" placeholder="Введите вашу фамилию*" type="text" name="Surname">
+                  <label class="client-info__label field">
+                    Фамилия:<input class="field__input-label" placeholder="Введите вашу фамилию*" type="text" name="Surname">
                   </label>
                 </li>
                 <li class="client-info__item">
-                  <label class="client-info__field field">
-                    Отчество:<input class="field-input" placeholder="Отчество, если желаете" type="text" name="fathers-name">
+                  <label class="client-info__label field">
+                    Отчество:<input class="field__input-label" placeholder="Отчество, если желаете" type="text" name="fathers-name">
                   </label>
                 </li>
               </ul>
+              </fieldset>
               <fieldset class="client-info__group">
                 <legend class="client-info__title">ТЕЛ</legend>
                 <div class="client-info__item">
-                  <label class="client-info__field field">
-                    <input class="field-input" placeholder="+7 ХХХ ХХХ ХХ ХХ*" type="number" name="phone">
+                  <label class="client-info__label field">
+                    <input class="field__input" placeholder="+7 ХХХ ХХХ ХХ ХХ*" type="number" name="phone">
                   </label>
                   </div>
               </fieldset>
               <fieldset class="client-info__group">
                 <legend class="client-info__title">E-MAIL</legend>
                 <div class="client-info__item">
-                  <label class="client-info__field field">
-                    <input class="field-input" placeholder="Ваш Email*" type="email" name="email">
+                  <label class="client-info__label field">
+                    <input class="field__input" placeholder="Ваш Email*" type="email" name="email">
                   </label>
                 </div>
               </fieldset>
               <fieldset class="client-info__group">
                 <legend class="client-info__title">ДОП</legend>
                 <div class="client-info__item">
-                  <label class="client-info__field">
-                    <input class="field-input" placeholder="Опишите все ваши пожелания к заказу" type="text" name="dop-info">
+                  <label class="client-info__label field">
+                    <input class="field__input" placeholder="Опишите все ваши пожелания к заказу" type="text" name="dop-info">
                   </label>
                 </div>
               </fieldset>
                 <p class="client-info__legend">
                   <small>*Поля обязательны для заполнения</small>
                 </p>
-            </fieldset>
-            <button class="send-button button" type="button">ОТПРАВИТЬ ЗАКАЗ</button>
+            <button class="client-info__send-button button" type="button">ОТПРАВИТЬ ЗАКАЗ</button>
           </form>
         </div>
       </section>
