@@ -9,3 +9,21 @@
   font-size: 17px;
   line-height: 24px;
 }
+
+.site-list__dop-item {
+  display: none;
+}
+
+@media (min-width: @desktop-width) {
+  .site-list__dop-item {
+    display: block;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .site-list {
+    display: flex;
+    margin-right: auto;
+    order: 2;
+  }
+}

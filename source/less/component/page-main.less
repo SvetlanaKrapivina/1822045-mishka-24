@@ -1,11 +1,41 @@
-.page-main__wrapper {
+.page-main__title-wrapper {
   background: url("../../img/hero.jpg") no-repeat;
+  height: 284px;
+  background-position: center;
+  width: auto;
 }
 
 .page-main__title {
   .font-700;
+  .reset-margins;
   font-size: 27px;
   line-height: 30px;
-  margin-top: 90px;
-  margin-bottom: 120px;
+  padding-top: 73px;
+  padding-bottom: 120px;
+  padding-right: 30px;
+  padding-left: 30px;
+  text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .page-main__title-wrapper {
+    background: url("../../img/hero-desktop.jpg") no-repeat;
+    height: 760px;
+    background-position: center;
+  }
+
+  .page-main__title {
+    font-size: 43px;
+    line-height: 50px;
+    padding-top: 155px;
+    padding-bottom: 372px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-main__title {
+    font-size: 53px;
+    line-height: 57px;
+    padding-bottom: 355px;
+  }
 }

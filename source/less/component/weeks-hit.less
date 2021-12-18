@@ -1,3 +1,10 @@
+@media (max-width: @mobile-width-only) {
+  .weeks-hit__wrapper {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
 .weeks-hit__title {
   .font-700;
   .reset-margins;
@@ -38,14 +45,93 @@
 
 .weeks-hit__image {
   margin-bottom: 25.5px;
+  text-align: center;
 }
 
 .weeks-hit__price {
   display: block;
   margin-bottom: 25px;
+  text-align: center;
 }
 
 .weeks-hit__order-button {
   display: block;
   margin-bottom: 73px;
+  text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .weeks-hit__title-container {
+    display: flex;
+    flex-direction: row;
+    padding-left: 6.5%;
+    padding-right: 6.5%;
+  }
+
+  .weeks-hit__title {
+    order: 2;
+    padding-top: 46px;
+  }
+
+  .weeks-hit__subtitle {
+    font-size: 43px;
+    line-height: 50px;
+    padding-top: 39.5px;
+    margin-right: 105px;
+  }
+
+  .weeks-hit__description-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:"description image"
+                        "parameters image"
+                        "price image"
+                        "button image";
+    margin-top: 39.5px;
+    padding-left: 6.5%;
+    padding-right: 6.5%;
+  }
+
+  .weeks-hit__description {
+    grid-area: description;
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 48px;
+  }
+
+  .weeks-hit__image {
+    grid-area: image;
+    text-align: right;
+  }
+
+  .weeks-hit__list {
+    grid-area: parameters;
+  }
+
+  .weeks-hit__price {
+    grid-area: price;
+  }
+
+  .weeks-hit__order-button {
+    grid-area: button;
+    margin-bottom: 122px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .weeks-hit__title-container {
+    padding-left: 4.4%;
+    padding-right: 4.4%;
+  }
+
+  .weeks-hit__description-container {
+    padding-left: 19.6%;
+    padding-right: 4.4%;
+  }
+
+  .weeks-hit__title {
+    order: 0;
+    padding-left: 32px;
+    margin-right: 43px;
+  }
 }

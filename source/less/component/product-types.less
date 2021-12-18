@@ -5,6 +5,7 @@
 .product-types__list li {
   padding-top: 24px;
   padding-bottom: 31px;
+  padding-left: 30px;
 }
 
 .product-types__list:last-child {
@@ -25,4 +26,41 @@
   font-size: 19px;
   line-height: 24px;
   color: #ffffff;
+}
+
+.product-types {
+  position: relative;
+}
+
+@media (min-width: @tablet-width) {
+  .product-types__wrapper {
+    position: absolute;
+    top: -126px;
+    left: 6.5%;
+    right: 6.5%;
+  }
+
+  .product-types__list {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .product-types__list li {
+    flex-grow: 1;
+    padding: 25px 167px 34px 36px;
+  }
+
+  .product-types__link {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .product-types__wrapper {
+    left: 4.4%;
+    right: 4.4%;
+  }
 }
