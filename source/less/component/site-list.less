@@ -9,3 +9,36 @@
   font-size: 17px;
   line-height: 24px;
 }
+
+.site-list__dop-item {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .site-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 40px;
+    order: 2;
+  }
+
+  .site-list li:first-child {
+    padding-left: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .site-list {
+    width: 405px;
+    margin-right: 50px;
+    order: 0;
+  }
+
+  .site-list__dop-item {
+    display: block;
+  }
+
+  .site-list li:nth-child(3) {
+    padding-left: 0;
+  }
+}

@@ -2,7 +2,55 @@
   background: #ffffff;
 }
 
+.page-header__logo {
+  height: 79px;
+  margin: 0 auto;
+}
+
 .page-header__logo-image {
   padding-top: 28px;
   padding-bottom: 28px;
+  margin: 0 auto;
+  display: block;
+}
+
+
+.page-header__text {
+  @media (max-width: @mobile-width-only) {
+    display: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .page-header__container {
+    padding-left: 6.5%;
+    padding-right: 6.5%;
+    width: 668px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .page-header__logo-image {
+    position: absolute;
+    top: 0;
+  }
+
+  .page-header__text {
+    position: absolute;
+    right: 0;
+    bottom: 17px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header__container {
+    width: 1050px;
+    padding-left: 4.4%;
+    padding-right: 4.4%;
+  }
+
+  .page-header__logo-image {
+    top: 0;
+    left: 450px;
+  }
 }
