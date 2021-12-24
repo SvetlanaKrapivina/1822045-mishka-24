@@ -1,26 +1,31 @@
 .catalog__wrapper {
   .centered;
+  padding-left: 6.5%;
+  padding-right: 6.5%;
 }
 
 .catalog__list {
   .list-style-none;
+  margin: 0 auto;
 }
 
 @media (min-width: @tablet-width) {
-  .catalog-card {
-    display: flex;
-    padding-left: 6.5%;
-    padding-right: 6.5%;
-  }
-
-  .catalog-card__wrapper {
+  .catalog__wrapper {
+    .reset-margins;
     width: 668px;
+    padding-left: 4.4%;
+    padding-right: 4.4%;
+    margin: 0 auto;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .catalog__wrapper {
+    width: 1050px;
+  }
+
   .catalog__list {
-    padding-left: 6.5%;
-    padding-right: 6.5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
