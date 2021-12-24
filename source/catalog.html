@@ -4,26 +4,33 @@
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body class="page-inner__body">
 
     <!-- Хедер и навигация -->
     <header class="page-header page-header-inner">
-      <a class="logo page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Магазин Мишка">
-      </a>
-      <nav class="main-nav">
-        <div class="main-nav__container">
+      <div class="page-header__container">
+        <a class="logo page-header__logo" href="index.html">
+          <img class="page-header__logo-image" src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Магазин Мишка">
+        </a>
+        <nav class="main-nav main-nav--opened">
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
           <div class="main-nav__wrapper">
             <ul class="main-nav__list site-list">
               <li class="site-list__item">
-                <a class="site-list__link" href="#">Каталог товаров</a>
+                <a class="site-list__link" href="catalog.html">Каталог товаров</a>
               </li>
               <li class="site-list__item">
                 <a class="site-list__link" href="form.html">Вязание на заказ</a>
+              </li>
+              <li class="site-list__item site-list__dop-item">
+                <a class="site-list__link" href="#">Новые поступления</a>
+              </li>
+              <li class="site-list__item site-list__dop-item">
+                <a class="site-list__link" href="#">Распродажа</a>
               </li>
             </ul>
             <ul class="main-nav__list user-list">
@@ -40,9 +47,10 @@
                 </a>
               </li>
             </ul>
+            <p class="page-header__text">Бесплатная доставка по России</p>
           </div>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </header>
 
     <main class="page-main page-inner-main">
@@ -55,7 +63,7 @@
           <ul class="catalog__list">
             <li class="catalog-card">
               <img class="catalog-card__image" src="img/hare-one.jpg" width="260" height="195" alt="игрушечный заяц">
-              <div class="catalog-card__wrapper">
+              <div class="catalog-card__text-wrapper">
                 <h2 class="catalog-card__title">Зайчик-попрыгайчик</h2>
                 <dl class="catalog-card__parameters-list">
                     <dt class="catalog-card__parameter">Рост</dt>
@@ -72,7 +80,7 @@
 
             <li class="catalog-card">
               <img class="catalog-card__image" src="img/basket-blankets.jpg" width="260" height="195" alt="маленькая корзинка с полотенцами">
-              <div class="catalog-card__wrapper">
+              <div class="catalog-card__text-wrapper">
                 <h2 class="catalog-card__title">Корзинка для белья</h2>
                 <dl class="catalog-card__parameters-list">
                     <dt class="catalog-card__parameter">Диаметр</dt>
@@ -89,7 +97,7 @@
 
             <li class="catalog-card">
               <img class="catalog-card__image" src="img/basket-toys.jpg" width="260" height="195" alt="большая корзина с игрушками">
-              <div class="catalog-card__wrapper">
+              <div class="catalog-card__text-wrapper">
                 <h2 class="catalog-card__title">Большая корзинка<br> для игрушек</h2>
                 <dl class="catalog-card__parameters-list">
                     <dt class="catalog-card__parameter">Диаметр</dt>
@@ -109,18 +117,20 @@
 
       <!-- Процесс производства -->
       <article class="basket-production">
-        <div class="basket-production__wrapper">
-          <h2 class="basket-production__title">Процесс<br> производства</h2>
-          <video class="basket-production__video" width="260" height="150" poster="img/video-stillframe.jpg">
-            <source src="#" type="#">
-          </video>
-          <span class="play-button" id="play-button"></span>
-          <p class="basket-production__description">
-            По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
-          </p>
-          <p class="basket-production__order-button-wrapper">
-            <a class="basket-production__order-button button" href="#">СДЕЛАТЬ ЗАКАЗ</a>
-          </p>
+        <div class="basket-production__container">
+          <div class="basket-production__wrapper">
+            <h2 class="basket-production__title">Процесс<br> производства</h2>
+            <video class="basket-production__video" width="260" height="150" poster="img/video-stillframe.jpg">
+              <source src="#" type="#">
+            </video>
+            <span class="play-button" id="play-button"></span>
+            <p class="basket-production__description">
+              По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
+            </p>
+            <p class="basket-production__order-button-wrapper">
+              <a class="basket-production__order-button button" href="#">СДЕЛАТЬ ЗАКАЗ</a>
+            </p>
+          </div>
         </div>
       </article>
     </main>
