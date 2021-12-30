@@ -8,10 +8,24 @@
   .font-700;
   font-size: 17px;
   line-height: 24px;
+
+  &:hover {
+    opacity: 60%;
+  }
+
+  &:active {
+    opacity: 30%;
+  }
 }
 
 .site-list__dop-item {
   display: none;
+}
+
+@media (max-width: @mobile-width-only) {
+  .site-list__item {
+    border-top: #ececec 1px solid;
+  }
 }
 
 @media (min-width: @tablet-width) {

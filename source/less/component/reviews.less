@@ -38,7 +38,13 @@
 }
 
 .reviews__arrows-wrapper {
+  display: flex;
   margin-bottom: 38px;
+}
+
+.reviews__arrow-left,
+.reviews__arrow-right {
+  flex-grow: 1;
 }
 
 .reviews__write-button {
@@ -65,8 +71,9 @@
 
   .reviews__arrows-wrapper {
     position: absolute;
-    right: 6.5%;
-    bottom: 50px;
+    width: 137px;
+    right: 12.5%;
+    bottom: 10px;
   }
 
   .reviews__write-button {

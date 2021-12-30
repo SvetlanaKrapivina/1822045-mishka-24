@@ -2,6 +2,10 @@
   background: #ffffff;
 }
 
+.page-header__container {
+  margin: 0 auto;
+}
+
 .page-header__logo {
   height: 79px;
   margin: 0 auto;
@@ -14,10 +18,13 @@
   display: block;
 }
 
-
-.page-header__text {
-  @media (max-width: @mobile-width-only) {
+@media (max-width: @mobile-width-only) {
+  .page-header__text {
     display: none;
+  }
+
+  .page-header__container {
+    border-top: #ececec 1px solid;
   }
 }
 
@@ -26,7 +33,6 @@
     padding-left: 6.5%;
     padding-right: 6.5%;
     width: 668px;
-    margin: 0 auto;
     position: relative;
   }
 
@@ -39,6 +45,9 @@
     position: absolute;
     right: 0;
     bottom: 17px;
+    font-size: 15px;
+    line-height: 24px;
+    color: #444444;
   }
 }
 
