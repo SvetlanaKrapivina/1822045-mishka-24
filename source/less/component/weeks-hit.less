@@ -5,9 +5,19 @@
   }
 }
 
+.weeks-hit__title-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.weeks-hit__title br {
+  display: none;
+}
+
 .weeks-hit__title {
   .font-700;
   .reset-margins;
+  order: 2;
   font-size: 17px;
   line-height: 20px;
   color: @tiffany-base-color;
@@ -35,12 +45,31 @@
   font-size: 15px;
   line-height: 20px;
   color: @light-black;
-  margin-bottom: 41px;
+  margin-bottom: 28px;
+}
+
+.weeks-hit__item {
+  border-bottom: #ececec 1px solid;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .weeks-hit__parameter,
-.wees-hit__parameter-description {
+.weeks-hit__parameter-description {
   display: inline-block;
+  margin: 0;
+}
+
+.weeks-hit__parameter-diametr {
+  margin-right: 30px;
+}
+
+.weeks-hit__parameter-color {
+  margin-right: 60px;
+}
+
+.weeks-hit__parameter-height {
+  margin-right: 40px;
 }
 
 .weeks-hit__image {

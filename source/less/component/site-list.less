@@ -4,14 +4,35 @@
 
 
 .site-list__link {
+  position: relative;
+  display: block;
   .link-correction;
   .font-700;
   font-size: 17px;
   line-height: 24px;
+
+  &:hover {
+    opacity: 60%;
+  }
+
+  &:visited {
+    opacity: 30%;
+  }
+}
+
+.site-list__item {
+  position: relative;
+  background-color: #ffffff;
 }
 
 .site-list__dop-item {
   display: none;
+}
+
+@media (max-width: @mobile-width-only) {
+  .site-list__item {
+    border-top: #ececec 1px solid;
+  }
 }
 
 @media (min-width: @tablet-width) {
