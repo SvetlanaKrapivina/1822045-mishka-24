@@ -1,28 +1,16 @@
-.group-color__title {
-  .font-700;
-  font-size: 17px;
-  line-height: 16px;
-  color: @tiffany-base-color;
-  margin-bottom: 30px;
-}
-
 @media (min-width: @tablet-width) {
   .group-color {
-    background: #f1f1f1f1;
+    background-color: #f1f1f1;
   }
 
   .group-color__list {
-    display: flex;
-    flex-wrap: wrap;
-    padding-top: 65px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
+}
 
-  .group-color__item {
-    width: 250px;
-  }
-
-  .group-color__title {
-    padding-top: 66px;
-    padding-bottom: 222px;
+@media (min-width: @desktop-width) {
+  .group-color__list {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }

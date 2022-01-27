@@ -1,14 +1,8 @@
-.basket-production__container {
-  margin: 0 auto;
-  margin-bottom: 58px;
-  padding-left: 6.5%;
-  padding-right: 6.5%;
-}
-
 .basket-production__wrapper {
   border: 1px solid #ececec;
-  width: 260px;
+  width: 80%;
   margin: 0 auto;
+  margin-bottom: 58px;
 }
 
 .basket-production__title {
@@ -21,6 +15,7 @@
 }
 
 .basket-production__video {
+  width: auto;
   margin-bottom: 35px;
 }
 
@@ -34,70 +29,67 @@
 
 .basket-production__order-button-wrapper {
   .reset-margins;
+  margin: 0 auto;
   margin-bottom: 33px;
 }
 
 .basket-production__order-button {
   .font-700;
+  .reset-margins;
+  padding: 18px 11px;
   font-size: 18px;
   line-height: 16px;
   color: @light-black;
 }
 
 @media (min-width: @tablet-width) {
-  .basket-production__container {
-    padding-left: 4.4%;
-    padding-right: 4.4%;
-  }
-
   .basket-production__wrapper {
     display: flex;
     flex-direction: column;
-    width: 668px;
-  }
-
-  .basket-production__title {
-    order: 2;
-    padding-left: 107px;
-    font-size: 20px;
-    line-height: 24px;
-    margin: 0;
-  }
-
-  .basket-production__title br {
-    display: none;
   }
 
   .basket-production__video {
+    order: 0;
+    margin-bottom: 41px;
+  }
+
+  .basket-production__title {
     order: 1;
   }
 
   .basket-production__description {
-    order: 3;
+    order: 2;
+    margin: 24.5px 17px 40.5px 40px;
   }
 
   .basket-production__order-button-wrapper {
-    order: 4;
-    margin: 0 auto;
+    order: 3;
+    padding-left: 42px;
+    padding-right: 42px;
+    width: 90%;
+    margin-bottom: 46px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .basket-production__wrapper {
     display: grid;
-    grid-template-areas:
-      "video title"
+    grid-template-areas: "video title"
       "video description"
       "video button";
-    width: 1050px;
+    width: 1052px;
+    height: 485px;
   }
 
   .basket-production__video {
     grid-area: video;
+    width: 683px;
   }
 
   .basket-production__title {
     grid-area: title;
+    padding-top: 96px;
+    margin: 0;
   }
 
   .basket-production__description {
@@ -106,5 +98,6 @@
 
   .basket-production__order-button-wrapper {
     grid-area: button;
+    padding: 18px 30px;
   }
 }
