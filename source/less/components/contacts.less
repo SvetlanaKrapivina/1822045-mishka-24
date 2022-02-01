@@ -1,0 +1,275 @@
+.contacts {
+  margin-bottom: 39px;
+
+  @media (min-width: @tablet) {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 133px;
+    margin-bottom: 57px;
+  }
+
+  @media (min-width: @desktop) {
+    .content-center;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: minmax(148px, auto) minmax(70px, auto) minmax(130px, auto) auto;
+    margin-top: 117px;
+    margin-bottom: 105px;
+  }
+}
+
+.contacts__title {
+  .margin-mobile;
+  margin-bottom: 28px;
+
+  @media (min-width: @tablet) {
+    width: 100%;
+    margin-right: 52px;
+    margin-bottom: 40px;
+    margin-left: 50px;
+    padding-top: 22px;
+    padding-bottom: 9px;
+    background-image: url("../img/decorations/contacts/flag.svg");
+    background-position: right;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: @desktop) {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    align-self: end;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 62px;
+    padding-top: 17px;
+    padding-bottom: 15px;
+    padding-left: 110px;
+    background-position: left;
+  }
+}
+
+.contacts__item {
+  max-width: 261px;
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 30px;
+
+  @media (min-width: @tablet) {
+    width: 50%;
+    align-self: flex-start;
+    margin: 0;
+    font-size: 17px;
+  }
+
+  @media (min-width: @desktop) {
+    width: auto;
+  }
+}
+
+.contacts__item-email {
+  margin-bottom: 30px;
+
+  @media (min-width: @tablet) {
+    min-width: 308px;
+    margin-right: 25px;
+    margin-left: 50px;
+  }
+
+  @media (min-width: @desktop) {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    align-self: end;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+  }
+}
+
+.contacts__item-address {
+  display: flex;
+  margin-bottom: 62px;
+
+  @media (min-width: @tablet) {
+    min-width: 335px;
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: @desktop) {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    margin-top: 10px;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+}
+
+.contacts__text {
+  display: inline;
+  margin-top: 0;
+  margin-right: 30px;
+  margin-bottom: 0;
+  margin-left: 0;
+
+  @media (min-width: @tablet) {
+    margin-right: 0;
+    white-space: normal;
+  }
+}
+
+.contacts__text-address {
+  margin-right: 35px;
+
+  @media (min-width: @tablet) {
+    margin-right: 28px;
+  }
+
+  @media (min-width: @desktop) {
+    margin-right: 25px;
+  }
+}
+
+.contacts__text-description {
+  margin-right: 0;
+
+  @media (min-width: @tablet) {
+    width: 65%;
+  }
+}
+
+.contacts__email {
+  position: relative;
+  text-underline-offset: 4px;
+  text-decoration-color: @special-decoration;
+  color: @font-base;
+
+  @media (min-width: @tablet) {
+    display: inline-block;
+    margin-left: 20px;
+    text-underline-offset: 8px;
+  }
+
+  @media (min-width: @desktop) {
+    box-sizing: border-box;
+    padding-bottom: 20px;
+    text-underline-offset: 13px;
+  }
+
+  &:hover,
+  &:focus {
+    color: @special-link-interaction;
+    text-decoration-color: @special-link-interaction;
+    outline: transparent;
+  }
+
+  &:active {
+    color: @special-link-interaction;
+    text-decoration-color: @special-link-underline-active;
+    outline: transparent;
+  }
+}
+
+.contacts__map {
+  display: block;
+  width: 100%;
+  margin-bottom: 42px;
+  background-image: image-set(
+    url("../img/content/contacts/map-mobile@1x.webp") 1x,
+    url("../img/content/contacts/map-mobile@1x.png") 1x);
+  background-color: @bg-gray-light;
+  background-repeat: no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: image-set(
+      url("../img/content/contacts/map-mobile@2x.webp") 2x,
+      url("../img/content/contacts/map-mobile@2x.png") 2x);
+  }
+
+  @media (min-width: @tablet) {
+    height: 457px;
+    margin-bottom: 53px;
+    background-image: image-set(
+      url("../img/content/contacts/map-tablet@1x.webp") 1x,
+      url("../img/content/contacts/map-tablet@1x.png") 1x);
+
+    @media (min-resolution: 2dppx) {
+      background-image: image-set(
+        url("../img/content/contacts/map-tablet@2x.webp") 2x,
+        url("../img/content/contacts/map-tablet@2x.png") 2x);
+    }
+  }
+
+  @media (min-width: @desktop) {
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    margin-bottom: 0;
+    background-image: image-set(
+      url("../img/content/contacts/map-desktop@1x.webp") 1x,
+      url("../img/content/contacts/map-desktop@1x.png") 1x);
+
+    @media (min-resolution: 2dppx) {
+      background-image: image-set(
+        url("../img/content/contacts/map-desktop@2x.webp") 2x,
+        url("../img/content/contacts/map-desktop@2x.png") 2x);
+    }
+  }
+
+  @supports (
+    background-image: image-set(
+      url("../img/content/contacts/map-mobile@1x.webp") 1x,
+      url("../img/content/contacts/map-mobile@2x.webp") 2x)
+  ) {
+    background-image: image-set(
+      url("../img/content/contacts/map-mobile@1x.webp") 1x,
+      url("../img/content/contacts/map-mobile@1x.png") 1x,
+      url("../img/content/contacts/map-mobile@2x.webp") 2x,
+      url("../img/content/contacts/map-mobile@2x.png") 2x);
+
+    @media (min-width: @tablet) {
+      background-image: image-set(
+        url("../img/content/contacts/map-tablet@1x.webp") 1x,
+        url("../img/content/contacts/map-tablet@1x.png") 1x,
+        url("../img/content/contacts/map-tablet@2x.webp") 2x,
+        url("../img/content/contacts/map-tablet@2x.png") 2x);
+    }
+
+    @media (min-width: @desktop) {
+      background-image: image-set(
+        url("../img/content/contacts/map-desktop@1x.webp") 1x,
+        url("../img/content/contacts/map-desktop@1x.png") 1x,
+        url("../img/content/contacts/map-desktop@2x.webp") 2x,
+        url("../img/content/contacts/map-desktop@2x.png") 2x);
+    }
+  }
+}
+
+.contacts__button {
+  min-width: calc(100% - 60px);
+  max-width: calc(100% - 60px);
+  margin: 0 auto;
+
+  @media (min-width: @tablet) {
+    min-width: 230px;
+    max-width: 230px;
+  }
+
+  @media (min-width: @desktop) {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    align-self: end;
+    margin-right: 0;
+    margin-bottom: 2px;
+    margin-left: 0;
+  }
+}

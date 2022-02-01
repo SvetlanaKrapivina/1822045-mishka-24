@@ -1,0 +1,157 @@
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wave {
+  background-image: url("../img/decorations/waves/wave.svg");
+  background-repeat: repeat-x;
+}
+
+.wave-wide {
+  background-image: url("../img/decorations/waves/wave-wide.svg");
+  background-repeat: repeat-x;
+}
+
+.wave-wide-desktop {
+  background-image: url("../img/decorations/waves/wave-wide-desktop.svg");
+  background-repeat: repeat-x;
+}
+
+.reset-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.reset-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.button-interaction {
+  background-image: linear-gradient(0deg, @font-base, @font-base);
+  border: 2px solid @font-base;
+}
+
+.icon-hover {
+  fill: @special;
+  opacity: 1;
+}
+
+.icon-active {
+  fill: @special-active;
+  opacity: 1;
+}
+
+.outline {
+  outline: 2px solid @special;
+}
+
+.outline-radius {
+  .outline;
+  border-radius: 10px;
+}
+
+.shadow {
+  box-shadow: 0 1px 0 @line-separator, inset 0 1px 0 @line-separator;
+}
+
+.header-line {
+  background-color: @font-dark;
+  opacity: 0.1;
+}
+
+.separator-vertical {
+  .header-line;
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -2px;
+  width: 1px;
+}
+
+.content-center {
+  max-width: @content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.decor {
+  .wave;
+  content: "";
+  position: absolute;
+  right: -30px;
+  left: -30px;
+  height: 6px;
+
+  @media (min-width: @tablet) {
+    .wave-wide;
+    right: -50px;
+    left: -50px;
+    height: 17px;
+  }
+
+  @media (min-width: @desktop) {
+    .wave-wide-desktop;
+    right: 0;
+    left: 0;
+    height: 23px;
+  }
+}
+
+.margin-mobile {
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+.margin-tablet {
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+.padding-form-group-tablet {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.border-bottom {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+}
+
+.link-underline {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-color: @special-decoration;
+}
+
+.header-menu-border {
+  .header-line;
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 1px;
+}
+
+.header-ears {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background-color: @bg-gray-light;
+  z-index: 3;
+}
+
+.header-ears-dark {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background-color: @bg-gray;
+  z-index: 3;
+}

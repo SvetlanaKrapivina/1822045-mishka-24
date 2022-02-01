@@ -1,0 +1,73 @@
+.button {
+  .flex-center;
+  box-sizing: border-box;
+  max-width: max-content;
+  min-height: 52px;
+  margin: 0;
+  padding: 5px;
+  font-family: @font-family-main;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: @font-base;
+  background-color: transparent;
+  border: @border-base;
+  cursor: pointer;
+  outline: transparent;
+  appearance: none;
+
+  @media (min-width: @tablet) {
+    font-size: 17px;
+  }
+
+  &:hover,
+  &:focus {
+    .button-interaction;
+    color: @font-opposite;
+  }
+
+  &:active {
+    .button-interaction;
+    color: @font-opposite-active;
+  }
+
+  &--narrow {
+    min-width: 100%;
+    margin: 0 auto;
+    line-height: 16px;
+
+    @media (min-width: @tablet) {
+      min-width: 230px;
+      margin-left: 0;
+    }
+  }
+
+  &--color {
+    min-width: 100%;
+    color: @font-opposite;
+    background-color: @special;
+    border: none;
+
+    @media (min-width: @tablet) {
+      min-width: 350px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    &:hover,
+    &:focus {
+      background-image: none;
+      background-color: @special-link-interaction;
+      border: none;
+    }
+
+    &:active {
+      background-image: none;
+      background-color: @special-active;
+      border: none;
+    }
+  }
+}
